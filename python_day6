@@ -1,42 +1,32 @@
-# Day New - Sets and Dictionary Practice
-
 # 1. Find Common Elements Between Two Lists
 
 list1 = [1, 2, 3, 4, 5]
 list2 = [4, 5, 6, 7, 8]
-
 common = list(set(list1) & set(list2))
 print("Common elements:", common)
-
 
 # 2. Create Dictionary from Two Lists
 
 keys = ["name", "age", "city"]
 values = ["Deepika", 20, "Bangalore"]
-
 my_dict = dict(zip(keys, values))
 print("Created dictionary:", my_dict)
-
 
 # 3. Count Frequency of Characters in String
 
 text = "programming"
 frequency = {}
-
 for char in text:
     if char in frequency:
         frequency[char] += 1
     else:
         frequency[char] = 1
-
 print("Character frequency:", frequency)
-
 
 # 4. Check if Two Strings are Anagrams
 
 str1 = "listen"
 str2 = "silent"
-
 if sorted(str1) == sorted(str2):
     print("Anagram")
 else:
